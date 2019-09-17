@@ -8,3 +8,5 @@ Voici toutes les fonctionnalités de FileCounter :
 * Possibilité d'obtenir des informations sur un disque dur
 * Aide intégrée
 * Système de mise à jour
+
+Documentation sur les commandes : https://github.com/Leo-Corporation/FileCounter/wiki/Commandes
