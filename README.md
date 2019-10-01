@@ -9,4 +9,4 @@ Voici toutes les fonctionnalités de FileCounter :
 * Aide intégrée
 * Système de mise à jour
 
-Documentation sur les commandes : https://github.com/Leo-Corporation/FileCounter/wiki/Commandes
+Cliquez [ici](https://github.com/Leo-Corporation/FileCounter/wiki/Commandes) pour voir la documentation sur les commandes.
