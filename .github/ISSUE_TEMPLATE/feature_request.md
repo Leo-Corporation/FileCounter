@@ -1,14 +1,13 @@
 ---
 name: Suggérer une fonctionnalité
 about: Suggérer une idée pour le projet.
-title: ''
-labels: ''
+title: "[Suggestion] "
+labels: suggestion
 assignees: ''
 
 ---
 
-**Est-ce que votre demande concerne un bug/problème ? Merci de le décicre.**
-**Si votre suggestion ne concerne pas un problème, merci de décrire la fonctionnalité que vous souhaitez voir apparaître dans le projet.**
+**Suggestion :**
 
 Une description claire et précise de problème/suggestion Ex: Je suis frustré lorsque [...] ou J'aimerai voir [...] 
 
