@@ -2,8 +2,8 @@
 Module Module1
 
     Sub Main()
-        Console.Title = "LABS - File Counter v1.3.0.1906"
-        Console.WriteLine("Made by Léo Peyronnet - (c) LPC (LABS) 2019")
+        Console.Title = "LABS - File Counter v1.3.1.2005"
+        Console.WriteLine("© 2020 Léo Corporation")
         Count()
     End Sub
     Sub Count()
@@ -15,7 +15,7 @@ Module Module1
         Dim str As String
         str = Console.ReadLine.ToString
         Dim aarayList() As String = str.Split(" ")
-        If aarayList(0) = "diskinfo" Then
+        If aarayList(0) = "diskinfo" Then ' Obtenir des informations sur le disque dur
             Try
                 Dim directory As String = aarayList(1)
                 Dim space2 As Object = My.Computer.FileSystem.GetDriveInfo(directory).AvailableFreeSpace / 1000000000
@@ -69,7 +69,7 @@ Module Module1
             End Try
 
             Count()
-        ElseIf aarayList(0) = "count" Then
+        ElseIf aarayList(0) = "count" Then ' Compter
             Try
                 dir = aarayList(1)
                 Dim f As Integer = 0
@@ -115,7 +115,7 @@ Module Module1
                 Console.ForegroundColor = ConsoleColor.Red
                 Console.WriteLine("Veuillez spécifier un lecteur.")
                 Console.WriteLine("")
-            Catch ex As System.IO.DriveNotFoundException
+            Catch ex As IO.DriveNotFoundException
                 Console.ForegroundColor = ConsoleColor.Red
                 Console.WriteLine("Le lecteur choisi est illisible, non-disponible, ou n'existe pas.")
                 Console.WriteLine("")
@@ -123,7 +123,7 @@ Module Module1
                 Console.ForegroundColor = ConsoleColor.Red
                 Console.WriteLine("L'objet doit être un répertoire racine ('C:\') ou une lettre de lecteur ('C').")
                 Console.WriteLine("")
-            Catch ex As System.IO.DirectoryNotFoundException
+            Catch ex As IO.DirectoryNotFoundException
                 Console.ForegroundColor = ConsoleColor.Red
                 If dir = "" Then
                     Console.WriteLine("Impossible de trouver une partie du chemin d'accès.")
@@ -140,7 +140,7 @@ Module Module1
 
 
             Count()
-        ElseIf aarayList(0) = "?" Then
+        ElseIf aarayList(0) = "?" Then 'Obtenir de l'aide
             Console.ForegroundColor = ConsoleColor.White
             Console.WriteLine("")
             Console.WriteLine("----- Aide -----")
@@ -153,12 +153,12 @@ Module Module1
             Console.WriteLine("")
 
             Count()
-        ElseIf aarayList(0) = "update" Then
+        ElseIf aarayList(0) = "update" Then 'Rechercher les mises à jour
             Console.ForegroundColor = ConsoleColor.White
             Console.WriteLine("Recherche en cours des mises à jour...")
             Dim MAJ As New WebClient
             Dim Four As New WebClient
-            Dim versionActuelle As String = "1.3.0.1906"
+            Dim versionActuelle As String = "1.3.1.2005"
             Dim derniereVersion As String = MAJ.DownloadString("https://dl.dropboxusercontent.com/s/jpvq9slc6rw0dtj/Version.txt")
             Dim FourMaj As String = Four.DownloadString("https://dl.dropboxusercontent.com/s/hwh2sldew5nhr07/fournisseur%20de%20la%20mise%20%C3%A0%20jour.txt")
             If versionActuelle = derniereVersion Then
@@ -169,10 +169,14 @@ Module Module1
                 Dim MAJ2 As New WebClient
                 Dim downloadLink As String = MAJ2.DownloadString("https://dl.dropboxusercontent.com/s/jtxrifouhkt3a7d/Download.txt")
                 Process.Start(downloadLink)
+                Count()
             End If
+        ElseIf aarayList(0) = "" Then
+            Count()
         Else
+            Console.ForegroundColor = ConsoleColor.Red
             Console.WriteLine("Commande inconnue. Tapez '?' pour en savoir plus")
+            Count()
         End If
-
     End Sub
 End Module
