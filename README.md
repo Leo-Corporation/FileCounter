@@ -1,3 +1,11 @@
+# Information
+![Ce projet a déménagé](https://raw.githubusercontent.com/Leo-Corporation/LeoCorp-Docs/master/Documentation/Images/LABS/Banni%C3%A8re%20LABS%20d%C3%A9m%C3%A9nage.png)
+
+**FileCounter est désormais intégré dans [**LeoCorpLibrary**](https://github.com/Leo-Corporation/LeoCorpLibrary)**.
+
+Utilisez LeoCorpLibrary pour implémenter ce système plus facilement dans vos projets.
+Vous pouvez utiliser toutes les fonctionnalités présentes dans ce répertoire dans la nouvelle bibliothèque. 
+
 # FileCounter
 FileCounter permet de compter le nombre de fichiers/dossiers qui sont stockés dans un repertoire (exemple : C:\Users).
 FileCounter est une interface de ligne de commande. Le projet est principalement une expérience.
