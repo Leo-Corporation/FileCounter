@@ -1,5 +1,5 @@
 # Information
-![Ce projet a déménagé](https://raw.githubusercontent.com/Leo-Corporation/LeoCorp-Docs/master/Documentation/Images/LABS/Banni%C3%A8re%20LABS%20d%C3%A9m%C3%A9nage.png)
+![Ce projet a déménagé](https://raw.githubusercontent.com/Leo-Corporation/LeoCorp-Docs/master/Documentation/Images/LABS/Projet%20LABS%20D%C3%A9m%C3%A9nage.png)
 
 **FileCounter est désormais intégré dans [**LeoCorpLibrary**](https://github.com/Leo-Corporation/LeoCorpLibrary)**.
 
